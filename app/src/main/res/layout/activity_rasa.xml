@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_rasa"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.makus.icecream.RasaActivity">
+
+    <TextView
+        android:id="@+id/teks_rasa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose your flavour:" />
+    <RadioGroup
+        android:id="@+id/p_rasa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/teks_rasa"
+        >
+        <RadioButton
+            android:id="@+id/p_vanila"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vanila"
+            android:checked="true"
+            />
+        <RadioButton
+            android:id="@+id/p_coklat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chocolate"/>
+        <RadioButton
+            android:id="@+id/p_stroberi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Strawberry"/>
+        <RadioButton
+            android:id="@+id/p_matcha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Matcha"/>
+    </RadioGroup>
+    <Button
+        android:id="@+id/p_beli"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/p_rasa"
+        android:text="Next"/>
+</RelativeLayout>

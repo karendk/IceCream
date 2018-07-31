@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    >
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_total"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context="com.makus.icecream.TotalActivity"
+        android:background="@color/colorPrimary">
+        <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/g_gambar"
+        android:scaleType="centerCrop"
+        android:src="@drawable/vanilaori"
+        />
+        <TextView
+            android:id="@+id/teks_nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:background="@color/colorAccent"
+            android:textColor="#fff"
+            android:layout_below="@+id/g_gambar"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:text="Price:" />
+        <TextView
+            android:id="@+id/p_total"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:background="@color/colorAccent"
+            android:textColor="#fff"
+            android:text="0"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_below="@+id/teks_nama"/>
+
+    </RelativeLayout>
+</ScrollView>
